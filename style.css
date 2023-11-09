@@ -5,18 +5,22 @@
   box-sizing: border-box;
 }
 
+/* <============= Basic Styling =============> */
+
 body {
   background: #002339;
   color: #fff;
 }
 
 .container {
+  /* Main container */
   margin: 12%;
   width: 90%;
   max-width: 700px;
 }
 
 .display {
+  /* Secondary container */
   width: 100%;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -30,6 +34,14 @@ body {
 }
 
 .container h1 {
+  /* Main container heading */
   font-weight: 500;
   font-size: 45px;
+}
+
+.container h1 span {
+  /* Second heading */
+  color: #019f55;
+  border-bottom: 4px solid #019f55;
+  padding-bottom: 7px;
 }
