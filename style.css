@@ -47,9 +47,20 @@ body {
 
 /* <============= Password generator textbox =============> */
 
-.display img {
-  width: 30px;
+#copy-btn {
+  background: #fff;
+  color: #019f55;
+}
+
+.fa-copy {
+  pointer-events: none;
+  font-size: 28px;
   cursor: pointer;
+}
+
+#copy-btn:hover {
+  background: #019f55;
+  color: #fff;
 }
 
 .display input {
@@ -60,9 +71,9 @@ body {
 
 /* <============= Password generator button =============> */
 
-.container button img {
-  width: 28px;
-  margin-right: 10px;
+.fa-bolt {
+  font-size: 28px;
+  margin-right: 1rem;
 }
 
 .container button {
@@ -76,4 +87,15 @@ body {
   padding: 1rem 2rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+#generate-btn {
+  background: #fff;
+  color: #019f55;
+}
+
+#generate-btn:hover {
+  background: #019f55;
+  color: #fff;
 }
