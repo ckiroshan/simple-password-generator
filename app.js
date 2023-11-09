@@ -1,9 +1,11 @@
 // Selectors
 const passwordBox = document.getElementById("password");
 const generateButton = document.getElementById("generate-btn");
+const copyGeneratedPassword = document.getElementById("copy-btn");
 
 // Event Listners
 generateButton.addEventListener("click", generatePassword);
+copyGeneratedPassword.addEventListener("click", copyPassword);
 
 // Other variables
 const length = 12;
@@ -24,4 +26,10 @@ function generatePassword() {
   while (length > password.length) [(password += allChars[Math.floor(Math.random() * allChars.length)])];
 
   passwordBox.value = password;
+}
+
+// Copying generated password
+function copyPassword() {
+  passwordBox.select();
+  document.execCommand("copy");
 }
